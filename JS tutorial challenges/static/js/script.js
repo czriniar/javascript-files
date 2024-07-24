@@ -1,5 +1,6 @@
 // Challenge 1: Age in days
 
+
 function ageInDays() {
     var age = prompt("What year were you born? ")
     var ageInDays = (2024 - age) * 365
@@ -11,5 +12,15 @@ function ageInDays() {
     
 }
 
+function reset() {
+    document.getElementById('ageInDays').remove();
+    
+}
 
+function generateCat() {
+    var image= document.createElement('img');
+    var div = document.getElementById('flex-cat-gen');
+    image.src = "https://cdn2.thecatapi.com/images/ebv.jpg"
+    div.appendChild(image);
+}
 
